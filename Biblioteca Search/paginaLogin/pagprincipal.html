@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/pagprincipal.css">
+    <title>Print do Quiz</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <img class="logo" src="imagens/Apostle Books.png">
+
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="produtos/eletronicos.html">Eletrônicos</a>
+                <a href="produtos/roupas.html">Roupas</a>
+                <a href="produtos/livros.html">Livros</a>
+                <a href="produtos/esportes.html">Esportes</a>
+            </nav>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Pesquisar produtos: eletrônicos, roupas, livros..."
+                    class="search-input">
+                <button onclick="performSearch()" class="search-btn">
+                    🔍
+                </button>
+
+                <div id="searchSuggestions" class="search-suggestions"></div>
+            </div>
+        </div>
+    </header>
+    <nav class="caixacentral">
+        <div class="caixas">
+            <h2>Quais comandos fazem parte da DDL (Data Definition Language)?</h2>
+            <div class="vermelho">
+                <h3>SELECT, INSERT, UPDATE</h3>
+            </div>
+            <div class="azul">
+                <h3>GRANT, REVOKE</h3>
+            </div>
+            <div class="amarelo">
+                <h3>CREATE, ALTER, DROP</h3>
+            </div>
+            <div class="verde">
+                <h3>SUM, COUNT, AVG</h3>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>
