@@ -6,10 +6,10 @@ async function verificarBackend() {
     try {
         const response = await fetch(`${API_BASE_URL}/usuarios`);
         backendOnline = response.ok;
-        console.log(backendOnline ? '✅ Backend conectado' : '❌ Backend não responde');
+        console.log(backendOnline ? 'Backend conectado' : '❌ Backend não responde');
         return backendOnline;
     } catch (error) {
-        console.log('⚠️ Backend offline - usando modo de teste');
+        console.log('Backend offline - usando modo de teste');
         backendOnline = false;
         return false;
     }
