@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="calculadora">
+        <div class="form">
+            <div class="display">
+                <input type="text" id="displayInput">
+            </div>
+            <div>
+                <input type="button" value="AC" onclick="limparDisplay(this.value)">
+                <input type="button" value="DE" onclick="apagarUltimo(this.value)">
+                <input type="button" value="." onclick="adicionarAoDisplay(this.value)">
+                <input type="button" value="/" onclick="adicionarAoDisplay(this.value)">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="adicionarAoDisplay(this.value)">
+                <input type="button" value="8" onclick="adicionarAoDisplay(this.value)">
+                <input type="button" value="9" onclick="adicionarAoDisplay(this.value)">
+                <input type="button" value="*" onclick="adicionarAoDisplay(this.value)">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="adicionarAoDisplay(this.value)">
+                <input type="button" value="5" onclick="adicionarAoDisplay(this.value)">
+                <input type="button" value="6" onclick="adicionarAoDisplay(this.value)">
+                <input type="button" value="-" onclick="adicionarAoDisplay(this.value)">
+            </div>
+            <div>
+                <input type="button" value="1" onclick="adicionarAoDisplay(this.value)">
+                <input type="button" value="2" onclick="adicionarAoDisplay(this.value)">
+                <input type="button" value="3" onclick="adicionarAoDisplay(this.value)">
+                <input type="button" value="+" onclick="adicionarAoDisplay(this.value)">
+            </div>
+            <div>
+                <input type="button" value="00" onclick="adicionarAoDisplay(this.value)">
+                <input type="button" value="0" onclick="adicionarAoDisplay(this.value)">
+                <input id="equal" type="button" value="=" onclick="calcular()">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="erro" id="erro"></div>
+<div class="resultado " id="resultado"></div>
+
+</body>
+<script src="JS/app.js"></script>
+</html>
