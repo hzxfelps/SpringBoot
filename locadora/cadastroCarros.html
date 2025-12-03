@@ -78,4 +78,22 @@
     </main>
 
     <footer class="rodape">
-        <p>Sistema de Locadora - Terminal v1.0
+        <p>Sistema de Locadora - Terminal v1.0</p>
+    </footer>
+
+    <script>
+        document.getElementById('formCarro').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const mensagem = document.getElementById('mensagemCarro');
+            mensagem.textContent = 'Carro cadastrado com sucesso.';
+            mensagem.className = 'areaMensagem mensagemSucesso';
+            mensagem.style.display = 'block';
+            
+            setTimeout(() => {
+                mensagem.style.display = 'none';
+                this.reset();
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
