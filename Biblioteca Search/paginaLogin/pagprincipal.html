@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/pagprincipal.css">
+    <title>Apostle Books</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <img class="logo" src="imagens/Apostle Books.png" alt="Logo">
+
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="romance.html">Romance</a>
+                <a href="acao.html">Ação</a>
+                <a href="ficcao.html">Ficção</a>
+                <a href="drama.html">Drama</a>
+            </nav>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Pesquisar mangás: Tokyo Ghoul, Naruto..."
+                    class="search-input">
+                <button onclick="pesquisarLivros()" class="search-btn">🔍</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Abas de categorias -->
+        <div class="abas" id="abasContainer">
+            <!-- As abas serão geradas por JavaScript -->
+        </div>
+
+        <!-- Result da pesq -->
+        <div id="resultadoPesquisa" class="resultado-pesquisa"></div>
+
+        <section class="livros-section">
+            <h2>Livros Disponíveis</h2>
+            <div class="livros-grid" id="livrosGrid">
+                <!-- Cards ajvascript  -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Casa do Caralho - Centro - São Paulo</p>
+            <p>Telefone: (69) 988-8888</p>
+            <p>&copy; 2024 Apostle Books</p>
+        </div>
+    </footer>
+
+    <script src="JS/javascript.js"></script>
+</body>
+
+</html>
