@@ -1,6 +1,10 @@
 document.getElementById('registroForm').addEventListener('submit', async function (e) {
     e.preventDefault();
 
+    function redirecionarUsuarios(){
+    window.location.href = "login2.html";
+}
+
     const nome = document.getElementById('nome').value;
     const email = document.getElementById('email').value;
     const senha = document.getElementById('senha').value;
@@ -8,7 +12,7 @@ document.getElementById('registroForm').addEventListener('submit', async functio
     const endereco = document.getElementById('endereco').value;
     const bairro = document.getElementById('bairro').value;
     const complemento = document.getElementById('complemento').value;
-    const cep = document.getElementById('cep').value;
+    const cep = document.getElementById('cep').value;   
     const cidade = document.getElementById('cidade').value;
     const estado = document.getElementById('estado').value;
 
@@ -32,7 +36,8 @@ document.getElementById('registroForm').addEventListener('submit', async functio
                 complemento: complemento,
                 cep: cep,
                 cidade: cidade,
-                estado: estado
+                estado: estado,
+                foto: fotoBase64
 
             })
         });
@@ -47,13 +52,13 @@ document.getElementById('registroForm').addEventListener('submit', async functio
             document.getElementById('erro').textContent = data.erro;
         } else {
             document.getElementById('resultado').textContent = 'Usuário cadastrado com sucesso!';
+            redirecionarUsuarios();
         }
 
     } catch (err) {
         document.getElementById('erro').textContent = 'Erro ao processar a requisição' + err.message;
     }
-});
-
+})
 /* const form = document.getElementById('registroForm');
 const mensagem = document.getElementById('mensagem');
 
@@ -87,3 +92,21 @@ form.addEventListener('submit', function(e) {
         mensagem.innerHTML = '<span class="erro">Erro ao cadastrar usuário.</span>';
     });
 }); */
+
+const fotoInput = document.getElementById('foto');
+const preview = document.getElementById('preview');
+let fotoBase64 = ""; // Variável global para guardar a string da foto
+
+// Evento para ler a foto assim que o usuário seleciona o arquivo
+fotoInput.addEventListener('change', function() {
+const arquivo = this.files[0];
+if (arquivo) {
+const reader = new FileReader();
+reader.onload = function(e) {
+fotoBase64 = e.target.result; // Aqui está o texto da imagem
+preview.src = fotoBase64;
+preview.style.display = 'block';
+};
+reader.readAsDataURL(arquivo);
+}
+});

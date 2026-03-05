@@ -6,7 +6,6 @@
                 const usuario = JSON.parse(usuarioLogado);
                 userInfo.innerHTML = `
                     <span class="user-name">👤 ${usuario.nome}</span>
-                    <a href="login2.html" class="logout-btn" onclick="logout()">Sair</a>
                 `;
             } else {
                 // login page if isnt loged

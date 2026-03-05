@@ -10,11 +10,9 @@
 <header>
     <h3> Página Cadastro</h3>
     <div class="headerRight">
-        <a href="users.html">
-            <h3> Página Usuários</h3>
+        <a href="login2.html">
+            <h3> Log-in</h3>
         </a>
-
-        <div class="headerRight" id="userInfo"> </div>
     </div>
 </header>
 
@@ -35,18 +33,22 @@
                 <input placeholder="Cep" id="cep" type="text">
                 <input placeholder="Cidade" id="cidade" type="text">
                 <input placeholder="Estado" id="estado" type="text">
+                <div class="fotoContainer">
+                    <label for="foto">Foto de perfil</label>
+                    <input type="file" id="foto" accept="image/*">
+                    <img id="preview" class="previewFoto" src="" alt="">
+                </div>
 
+                <button id="submit" type="submit">Submit</button>
 
-                <button id="submit" type="submit" onclick="window.location.href='users.html'"> Submit</button>
-
+                <p id="resultado"></p>
+                <p id="erro"></p>
             </form>
         </div>
     </div>
 
-    <footer> </footer>0
-    .
+    <footer></footer>
 </body>
 <script src="js/app.js"></script>
-<script src="js/mostrarUsuarioLogado.js"></script>
 
 </html>

@@ -41,6 +41,9 @@ async function carregarUsuario() {
         cepInput.value = usuario.cep || '';
         cidadeInput.value = usuario.cidade || '';
         estadoInput.value = usuario.estado || '';
+        fotoBase64 = u.foto;
+        preview.src = u.foto;
+        preview.style.display = 'block';
     } catch (error) {
         console.error(error);
         alert('Não foi possível carregar os dados do usuário.');
