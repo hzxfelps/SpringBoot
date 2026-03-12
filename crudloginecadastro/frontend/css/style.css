@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(jiji-de-dandadan-13533.webp);
+    /* 1. Specify the image file path */
+    background-repeat: no-repeat;
+    /* 2. Prevent the image from tiling */
+    background-size: cover;
+    /* 3. Scale the image to cover the entire element */
+    background-position: center;
+    /* 4. Center the image within the viewport */
+    background-attachment: fixed;
+    /* 5. Keep the image fixed when scrolling */
+    background-color: #ffffff;
+    /* 6. Fallback color if the image fails to load */
+}
+
+header {
+    padding: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid rgb(90, 90, 90);
+    background-color: black;
+}
+
+
+.genericContainer {
+    border-radius: 20px;
+    background-color: rgb(31, 31, 31);
+    align-items: center;
+    justify-items: center;
+    border: 2px solid rgb(90, 90, 90);
+    padding: 20px;
+    text-align: center;
+    max-width: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.superbox {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+
+input {
+    display: block;
+    margin: 20px;
+    border: none;
+    width: 40vh;
+    height: 5vh;
+    background-color: rgb(44, 44, 44);
+    border: 2px solid rgb(101, 101, 101);
+    border-radius: 20px;
+}
+
+input::placeholder {
+    font-size: 15px;
+    padding: 10px;
+    color: rgb(216, 216, 216);
+
+}
+
+button {
+    background-color: rgb(44, 44, 44);
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid rgb(101, 101, 101);
+}
+
+.tabelaUsuarios {
+    text-align: justify;
+    border-collapse: collapse;
+
+    td,
+    tr {
+        padding: 5px;
+        border: 1.5px solid rgb(101, 101, 101);
+        ;
+    }
+}
+
+.pradireita {
+    padding-left: 94.5%;
+}
+
+#userInfo {
+    padding-right: 80%;
+
+}
+
+#fotoInput {
+    display: none;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.199);
+}
+#preview {
+    width: 20vh;
+    height: 20vh;
+    padding: 0.5vh;
+    margin: 4vh;
+}
+.fotoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.imgtable{
+    width: 200px;
+    height: 150px;
+}
